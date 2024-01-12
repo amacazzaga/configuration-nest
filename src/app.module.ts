@@ -8,7 +8,7 @@ import { ConfigModule } from '@nestjs/config';
   // Cuando configuras el ConfigModule se obtiene un ConfigService que se puede
   // inyectar en  servicios y controladores para acceder a la configuración de la aplicación.
   //Por otro lado como acceder a .env puede ser algo lento, podemos setear cache en el objeto para mejorar un poco la performance
-})
+}) // AQUI PODRIAMOS CONECTAR CON NUESTRA BASE DE DATOS DE MONGODB!, CON TYPEORM O PASANDO AL OBJETO
 export class AppModule {}
 
 /*
