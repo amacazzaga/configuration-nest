@@ -12,6 +12,10 @@ import { ConfigModule } from '@nestjs/config';
 export class AppModule {}
 
 /*
+importante: 
+*/ 
+
+/*
 PODRIAMOS USAR UN ESQUEMA DE VALIDACION SI QUISIERAMOS EN NUESTRO APP MODULE, SEGUN LA DOCUMENTACION INSTALANDO JOI COSA QUE NO HICIMOS PERO DEJAMOS EL EJEMPLO
 @Module({
   imports: [
