@@ -10,7 +10,7 @@ import { jwtConstants } from './constants';
     UsersModule, // importante: importamos el modulo de usuario en el de auth porque hay una dependencia directa entre el servicio de autenticacion
     // y el de usuario (authenticacion service linea 15)
     JwtModule.register({
-      global: true,
+      global: true, // esto significa que los controladores y servicios dentro de este modulo estaran disponibles en todo el contexto de la app
       secret: jwtConstants.secret,
       signOptions: { expiresIn: '60s' },
     }),
