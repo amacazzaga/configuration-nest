@@ -24,8 +24,7 @@ export class AuthGuard implements CanActivate {
       context.getClass(),
     ]);
     if (isPublic) {
-      // si is Publuc es porque encuetra en el controller el decorador @Public, que funciona para setMetadata en tru
-
+      // si is Public es porque encuetra en el controller el decorador @Public, que funciona para setMetadata en tru
       return true; // retorna true y el resto no se ejecuta, es decir, da acceso al endpoint del controllador
     }
     const request = context.switchToHttp().getRequest(); // la request se obtiene a partir del contexto de ejecucion
