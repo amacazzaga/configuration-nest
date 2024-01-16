@@ -16,7 +16,7 @@ import { AuthGuard } from './authentication.guard';
       signOptions: { expiresIn: '60s' },
     }),
   ],
-  providers: [AuthService,AuthGuard], // añadioms el guardia a la lista de providers
+  providers: [AuthService,AuthGuard], // añadimos el guardia a la lista de providers
   controllers: [AuthController],
   exports: [AuthService,AuthGuard], // lo hacemos global exportandolo a todo el modulo
 })
